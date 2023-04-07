@@ -1,0 +1,289 @@
+{
+ "obs": [
+  {
+   "name": "S",
+   "title": "Species",
+   "description": null
+  },
+  {
+   "name": "T",
+   "title": "Transition",
+   "description": null
+  },
+  {
+   "name": "I",
+   "title": "Input",
+   "description": null
+  },
+  {
+   "name": "O",
+   "title": "Output",
+   "description": null
+  },
+  {
+   "name": "B",
+   "title": "Observable",
+   "description": null
+  }
+ ],
+ "homs": [
+  {
+   "name": "it",
+   "dom": "I",
+   "codom": "T",
+   "title": "Input transition morphism",
+   "description": null
+  },
+  {
+   "name": "is",
+   "dom": "I",
+   "codom": "S",
+   "title": "Input species morphism",
+   "description": null
+  },
+  {
+   "name": "ot",
+   "dom": "O",
+   "codom": "T",
+   "title": "Output transition morphism",
+   "description": null
+  },
+  {
+   "name": "os",
+   "dom": "O",
+   "codom": "S",
+   "title": "Output species morphism",
+   "description": null
+  }
+ ],
+ "attrtypes": [
+  {
+   "name": "Name",
+   "ty": "str",
+   "title": "Name",
+   "description": null
+  },
+  {
+   "name": "Value",
+   "ty": "float",
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "JsonStr",
+   "ty": "str",
+   "title": null,
+   "description": "A string a serialized JSON object"
+  },
+  {
+   "name": "XmlStr",
+   "ty": "str",
+   "title": null,
+   "description": "A string representing an XML object as a string"
+  },
+  {
+   "name": "SymPyStr",
+   "ty": "str",
+   "title": null,
+   "description": "A string representing an expression in the SymPy Python package's internal domain specific language (DSL)."
+  }
+ ],
+ "attrs": [
+  {
+   "name": "sname",
+   "dom": "S",
+   "codom": {
+    "name": "Name",
+    "ty": "str",
+    "title": "Name",
+    "description": null
+   },
+   "title": "Species name",
+   "description": "An attribute representing the name of a species."
+  },
+  {
+   "name": "tname",
+   "dom": "T",
+   "codom": {
+    "name": "Name",
+    "ty": "str",
+    "title": "Name",
+    "description": null
+   },
+   "title": "Transition name",
+   "description": "An attribute representing the name of a transition."
+  },
+  {
+   "name": "parameter_name",
+   "dom": "T",
+   "codom": {
+    "name": "Name",
+    "ty": "str",
+    "title": "Name",
+    "description": null
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "parameter_value",
+   "dom": "T",
+   "codom": {
+    "name": "Value",
+    "ty": "float",
+    "title": null,
+    "description": null
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_ids",
+   "dom": "S",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_context",
+   "dom": "S",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_concept",
+   "dom": "S",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_initial_value",
+   "dom": "S",
+   "codom": {
+    "name": "Value",
+    "ty": "float",
+    "title": null,
+    "description": null
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "template_type",
+   "dom": "T",
+   "codom": {
+    "name": "Name",
+    "ty": "str",
+    "title": "Name",
+    "description": null
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_rate_law",
+   "dom": "T",
+   "codom": {
+    "name": "SymPyStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string representing an expression in the SymPy Python package's internal domain specific language (DSL)."
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_rate_law_mathml",
+   "dom": "T",
+   "codom": {
+    "name": "XmlStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string representing an XML object as a string"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_template",
+   "dom": "T",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_parameters",
+   "dom": "T",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_parameter_distributions",
+   "dom": "T",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "concept",
+   "dom": "B",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "expression",
+   "dom": "B",
+   "codom": {
+    "name": "SymPyStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string representing an expression in the SymPy Python package's internal domain specific language (DSL)."
+   },
+   "title": null,
+   "description": null
+  }
+ ],
+ "version": {
+  "ACSetSchema": "0.0.1",
+  "Catlab": "0.14.12"
+ }
+}
