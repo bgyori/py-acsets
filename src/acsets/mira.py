@@ -10,6 +10,7 @@ Species = Ob(name="S", title="Species")
 Transition = Ob(name="T", title="Transition")
 Input = Ob(name="I", title="Input")
 Output = Ob(name="O", title="Output")
+Observable = Ob(name="B", title="Observable")
 
 hom_it = Hom(name="it", dom=Input, codom=Transition, title="Input transition morphism")
 hom_is = Hom(name="is", dom=Input, codom=Species, title="Input species morphism")
@@ -58,10 +59,16 @@ attr_rate_law = Attr(name="mira_rate_law", dom=Transition, codom=SymPyStr)
 attr_rate_mathml = Attr(name="mira_rate_law_mathml", dom=Transition, codom=XmlStr)
 attr_template = Attr(name="mira_template", dom=Transition, codom=JsonStr)
 attr_parameters = Attr(name="mira_parameters", dom=Transition, codom=JsonStr)
+attr_parameter_distributions = Attr(name="mira_parameter_distributions",
+                                    dom=Transition, codom=JsonStr)
+
+# Observable attributes
+attr_obs_concept = Attr(name="concept", dom=Observable, codom=JsonStr)
+attr_obs_expression = Attr(name="expression", dom=Observable, codom=SymPyStr)
 
 SchMira = Schema(
     name="MiraNet",
-    obs=[Species, Transition, Input, Output],
+    obs=[Species, Transition, Input, Output, Observable],
     homs=[hom_it, hom_is, hom_ot, hom_os],
     attrtypes=[Name, Value, JsonStr, XmlStr, SymPyStr],
     attrs=[
@@ -78,6 +85,9 @@ SchMira = Schema(
         attr_rate_mathml,
         attr_template,
         attr_parameters,
+        attr_parameter_distributions,
+        attr_obs_concept,
+        attr_obs_expression,
     ],
 )
 
