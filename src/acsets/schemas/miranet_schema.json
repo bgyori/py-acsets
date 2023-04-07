@@ -280,6 +280,30 @@
    },
    "title": null,
    "description": null
+  },
+  {
+   "name": "mira_parameters",
+   "dom": "B",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
+  },
+  {
+   "name": "mira_parameter_distributions",
+   "dom": "B",
+   "codom": {
+    "name": "JsonStr",
+    "ty": "str",
+    "title": null,
+    "description": "A string a serialized JSON object"
+   },
+   "title": null,
+   "description": null
   }
  ],
  "version": {

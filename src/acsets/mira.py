@@ -65,6 +65,9 @@ attr_parameter_distributions = Attr(name="mira_parameter_distributions",
 # Observable attributes
 attr_obs_concept = Attr(name="concept", dom=Observable, codom=JsonStr)
 attr_obs_expression = Attr(name="expression", dom=Observable, codom=SymPyStr)
+attr_obs_parameters = Attr(name="mira_parameters", dom=Observable, codom=JsonStr)
+attr_obs_parameter_distributions = Attr(name="mira_parameter_distributions",
+                                        dom=Observable, codom=JsonStr)
 
 SchMira = Schema(
     name="MiraNet",
@@ -88,6 +91,8 @@ SchMira = Schema(
         attr_parameter_distributions,
         attr_obs_concept,
         attr_obs_expression,
+        attr_obs_parameters,
+        attr_obs_parameter_distributions,
     ],
 )
 
